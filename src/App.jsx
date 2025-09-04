@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { zdjecia as daneZdjec } from './assets/dane';
+import './App.css'
+
 
 function App() {
   const [kategorie, setKategorie] = useState({
@@ -32,7 +34,7 @@ function App() {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="container">
       <h1>Kategorie zdjęć</h1>
 
       <div className="form-check form-switch form-check-inline">
@@ -71,7 +73,7 @@ function App() {
       <div className="d-flex flex-wrap">
         {zdjecia.filter(z => filtrujKategorie(z.category)).map(z => (
           <div key={z.id}>
-            <img
+            <img className='img-format'
               src={`assets/${z.filename}`}
               alt={z.alt}
             />
