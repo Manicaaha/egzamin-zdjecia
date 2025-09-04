@@ -38,7 +38,7 @@ export const zdjecia = [
     id: 6,
     alt: "Samochód sportowy",
     filename: "kwitek.jpg",
-    category: 3,
+    category: 1,
     downloads: 15
   },
 ];
